@@ -1,7 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
-" Plug 'valloric/YouCompleteMe'
+Plug 'valloric/YouCompleteMe'
  " Plug 'alvan/vim-closetag'
 Plug 'scrooloose/syntastic'
 Plug 'flazz/vim-colorschemes'
@@ -19,6 +19,10 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " }}}
 "
 call plug#end()
+
+" Fuzzy finder
+imap <c-x><c-l> <plug>(fzf-complete-line)
+
 
 " run pathogen
 execute pathogen#infect()
