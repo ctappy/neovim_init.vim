@@ -34,8 +34,9 @@ set undofile
 " turn off buffer
 set hidden
 
-" smart tab/spaces
+" smart tab/ 2 spaces
 set smarttab
+set shiftwidth=2 
 
 
 " do not create backup
