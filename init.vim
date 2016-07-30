@@ -11,6 +11,7 @@ Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rake'
 
+Plug 'mhinz/vim-startify'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " {{{
@@ -55,16 +56,6 @@ map <C-Q> :qa<CR>
 " Language-specific
 highlight! link elixirAtom rubySymbol
 
-" Vim color-schemes
-colorscheme jellybeans
-
-set cursorline     " highlight current line
-set colorcolumn=80 " highlight column
-highlight! ColorColumn ctermbg=233 guibg=#131313
-
-" Various columns
-highlight! SignColumn ctermbg=233 guibg=#0D0D0D
-highlight! FoldColumn ctermbg=233 guibg=#0D0D0D
 
 
 " github auto login
@@ -110,7 +101,18 @@ highlight SyntasticStyleErrorSign guifg=black guibg=#ff8700 ctermfg=16 ctermbg=2
 highlight link SyntasticError SpellBad
 highlight link SyntasticWarning SpellCap
 
+" Vim color-schemes
+colorscheme jellybeans
 
+set cursorline     " highlight current line
+set colorcolumn=80 " highlight column
+highlight! ColorColumn ctermbg=233 guibg=#131313
+
+" Various columns
+highlight! SignColumn ctermbg=233 guibg=#0D0D0D
+highlight! FoldColumn ctermbg=233 guibg=#0D0D0D
+
+" Lightline
 Plug 'itchyny/lightline.vim'
 " {{{
   let g:lightline = {
