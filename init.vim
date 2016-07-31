@@ -20,6 +20,21 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 "
 call plug#end()
 
+" Call Explorer by pressing f2
+map <F2> :Explore<CR>
+
+" Call Startify by pressing f4
+map <F3> :SClose<CR>
+
+" Use CTRL-W for saving, also in Insert mode
+noremap <C-W> :update<CR>
+vnoremap <C-W> <C-C>:update<CR>
+inoremap <C-W> <C-O>:update<CR>
+
+" allow quit via ctrl-q
+map <C-Q> :qa<CR>
+
+
 " Fuzzy finder
 imap <c-x><c-l> <plug>(fzf-complete-line)
 
@@ -38,11 +53,6 @@ set hidden
 set smarttab
 set shiftwidth=2 
 
-" Call Explorer by pressing f2
-map <F2> :Explore<CR>
-
-" Call Startify by pressing f4
-map <F4> :SClose<CR>
 
 " do not create backup
 set nobackup
@@ -54,14 +64,6 @@ set mouse=""
 
 " Turn on numbers
 set number
-
-" Use CTRL-W for saving, also in Insert mode
-noremap <C-W> :update<CR>
-vnoremap <C-W> <C-C>:update<CR>
-inoremap <C-W> <C-O>:update<CR>
-
-" allow quit via ctrl-q
-map <C-Q> :qa<CR>
 
 " Language-specific
 highlight! link elixirAtom rubySymbol
