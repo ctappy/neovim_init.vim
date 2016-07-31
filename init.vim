@@ -41,6 +41,8 @@ set shiftwidth=2
 " Call Explorer by pressing f2
 map <F2> :Explore<CR>
 
+" Call Startify by pressing f4
+map <F4> :SClose<CR>
 
 " do not create backup
 set nobackup
