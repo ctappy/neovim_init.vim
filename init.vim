@@ -38,6 +38,9 @@ set hidden
 set smarttab
 set shiftwidth=2 
 
+" Call Explorer by pressing f2
+map <F2> :Explore<CR>
+
 
 " do not create backup
 set nobackup
