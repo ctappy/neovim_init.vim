@@ -1,11 +1,12 @@
-Neovim config folder
+Neovim config folder install
 =========
-
-Install
-----
 ```
-git clone git@github.com:ctaperts/neovim_init.vim.git
-open nvim, run :PlugInstall
-clone YouCompleteMe to a folder under bundle
-run ./install.py
+cd ~/.config/
+git clone git@github.com:ctaperts/neovim_init.vim.git nvim
+nvim -c PlugInstall
+cd nvim/bundle/
+git clone https://github.com/Valloric/YouCompleteMe.git
+cd YouCompleteMe/
+git submodule update --init --recursive
+cd  ./install.py
 ```
