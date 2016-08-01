@@ -20,11 +20,13 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 "
 call plug#end()
 
-" Call Explorer by pressing f2
+" Call Explorer by pressing f2 or ctrl-e
 map <F2> :Explore<CR>
+map <C-E> :Explore<CR>
 
-" Call Startify by pressing f4
+" Call Startify by pressing f4 or ctrl-s
 map <F3> :SClose<CR>
+map <C-S> :SClose<CR>
 
 " Use CTRL-W for saving, also in Insert mode
 noremap <C-W> :update<CR>
