@@ -20,6 +20,9 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 "
 call plug#end()
 
+" expand netrw tree
+let g:netrw_liststyle=3
+
 " Call Explorer by pressing f2 or ctrl-e
 map <F2> :Explore<CR>
 map <C-E> :Explore<CR>
