@@ -10,6 +10,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rake'
+Plug 'dietsche/vim-lastplace'
 
 Plug 'mhinz/vim-startify'
 
