@@ -1,5 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/colby/TTS/WEEK_8/tweetter/app/controllers'
-let g:netrw_dirhist_2='/home/colby/TTS/WEEK_8/tweetter/app'
-let g:netrw_dirhist_3='/home/colby/TTS/WEEK_8/tweetter'
+let g:netrw_dirhist_cnt =0
