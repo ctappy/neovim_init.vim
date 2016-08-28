@@ -4,6 +4,7 @@ Neovim setup
 
 * Your Vim must have Ruby support enabled. Check if :echo has('ruby') prints 1.
 * If you see LoadError on :ruby require 'json/pure', you need to install json_pure gem.
+
 #### Copy and paste this into terminal
 ```
 cd ~/.config/ && git clone git@github.com:ctaperts/neovim_init.vim.git nvim && cd nvim/bundle/ && git clone https://github.com/Valloric/YouCompleteMe.git && cd YouCompleteMe/ && git submodule update --init --recursive && ./install.py
