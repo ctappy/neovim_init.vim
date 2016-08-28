@@ -13,6 +13,16 @@ cd ~/.config/ && git clone git@github.com:ctaperts/neovim_init.vim.git nvim && c
 #### Then install Plugs, type :q(return) twice to exit
 nvim -c PlugInstall
 
+#### Setup Github Dashboard
+[Instruction to setup github token](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)
+
+add to bashrc 
+
+```
+export GITHUB_USERNAME="<username>"
+export GITHUB_TOKEN="<github token>"
+```
+
 Options
 ------
 * ctrl-e - open netrw

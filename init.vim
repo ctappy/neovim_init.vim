@@ -100,7 +100,7 @@ set laststatus=2
 
 
 " github auto login
-let g:github_dashboard = { 'username': 'ctaperts', 'password': $GITHUB_TOKEN }
+let g:github_dashboard = { 'username': $GITHUB_USERNAME, 'password': $GITHUB_TOKEN }
 
 
 " Syntastastic syntax
