@@ -28,6 +28,12 @@ let g:netrw_liststyle=3
 map <F2> :Explore<CR>
 map <C-E> :Explore<CR>
 
+" Call FZF search by pressing ctrl-f
+map <C-L> :FZF<CR>
+
+" setup find and replace syntax
+map <C-C> :%s/from/to/g
+
 " Call Startify by pressing f4 or ctrl-s
 map <F3> :SClose<CR>
 map <C-S> :SClose<CR>
@@ -39,10 +45,6 @@ inoremap <C-W> <C-O>:update<CR>
 
 " allow quit via ctrl-q
 map <C-Q> :qa<CR>
-
-
-" Fuzzy finder
-imap <c-x><c-l> <plug>(fzf-complete-line)
 
 
 " run pathogen
