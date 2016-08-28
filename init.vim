@@ -46,6 +46,9 @@ inoremap <C-W> <C-O>:update<CR>
 " allow quit via ctrl-q
 map <C-Q> :qa<CR>
 
+" Run Github activity
+map <C-V> :GHActivity<cr>
+
 
 " run pathogen
 execute pathogen#infect()
