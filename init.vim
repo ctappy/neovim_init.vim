@@ -11,6 +11,7 @@ Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rake'
 Plug 'dietsche/vim-lastplace'
+Plug 'myusuf3/numbers.vim'
 
 Plug 'mhinz/vim-startify'
 
