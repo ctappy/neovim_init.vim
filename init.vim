@@ -12,6 +12,7 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rake'
 Plug 'dietsche/vim-lastplace'
 Plug 'myusuf3/numbers.vim'
+Plug 'christoomey/vim-rfactory'
 
 Plug 'mhinz/vim-startify'
 
