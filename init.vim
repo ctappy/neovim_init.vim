@@ -13,6 +13,8 @@ Plug 'tpope/vim-rake'
 Plug 'dietsche/vim-lastplace'
 Plug 'myusuf3/numbers.vim'
 Plug 'christoomey/vim-rfactory'
+" Neomake build tool (mapped below to <c-b>)
+Plug 'neomake/neomake'
 " autocompletion library for python
 Plug 'davidhalter/jedi-vim'
 " status bar
@@ -36,11 +38,22 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 "
 call plug#end()
 
+" Neomake and other build commands (ctrl-b)
+nnoremap <C-b> :w<cr>:Neomake<cr>
+
+autocmd BufNewFile,BufRead *.tex,*.bib noremap <buffer> <C-b> :w<cr>:new<bar>r !make<cr>:setlocal buftype=nofile<cr>:setlocal bufhidden=hide<cr>:setlocal noswapfile<cr>
+autocmd BufNewFile,BufRead *.tex,*.bib imap <buffer> <C-b> <Esc><C-b>
+autocmd! QuitPre * let g:neomake_verbose = 0
+
 """"""" Python stuff """""""
 syntax enable
 set number showmatch
 set shiftwidth=4 tabstop=4 softtabstop=4 expandtab autoindent
 let python_highlight_all = 1
+" run python code with :make and ctrl-m to run :make
+set makeprg=python\ %
+set autowrite
+map <C-M> :make<CR>
 
 " expand netrw tree
 let g:netrw_liststyle=3
