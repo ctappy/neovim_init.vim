@@ -44,7 +44,8 @@ nnoremap <C-b> :w<cr>:Neomake<cr>
 autocmd BufNewFile,BufRead *.tex,*.bib noremap <buffer> <C-b> :w<cr>:new<bar>r !make<cr>:setlocal buftype=nofile<cr>:setlocal bufhidden=hide<cr>:setlocal noswapfile<cr>
 autocmd BufNewFile,BufRead *.tex,*.bib imap <buffer> <C-b> <Esc><C-b>
 autocmd! QuitPre * let g:neomake_verbose = 0
-
+" copy and paste using system clipboard
+set clipboard=unnamedplus
 """"""" Python stuff """""""
 syntax enable
 set number showmatch
