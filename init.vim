@@ -13,6 +13,19 @@ Plug 'tpope/vim-rake'
 Plug 'dietsche/vim-lastplace'
 Plug 'myusuf3/numbers.vim'
 Plug 'christoomey/vim-rfactory'
+" autocompletion library for python
+Plug 'davidhalter/jedi-vim'
+" status bar
+Plug 'vim-airline'
+" Remove extraneous whitespace when edit mode is exited
+Plug 'thirtythreeforty/lessspace.vim'
+" Tab completion
+Plug 'ervandew/supertab'
+""""""" SuperTab configuration """""""
+"let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
+function! Completefunc(findstart, base)
+    return "\<c-x>\<c-p>"
+endfunction
 
 Plug 'mhinz/vim-startify'
 
@@ -22,6 +35,12 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " }}}
 "
 call plug#end()
+
+""""""" Python stuff """""""
+syntax enable
+set number showmatch
+set shiftwidth=4 tabstop=4 softtabstop=4 expandtab autoindent
+let python_highlight_all = 1
 
 " expand netrw tree
 let g:netrw_liststyle=3
@@ -62,11 +81,6 @@ set undofile
 " turn off buffer
 set hidden
 
-" smart tab/ 2 spaces
-set smarttab
-set shiftwidth=2 
-
-
 " do not create backup
 set nobackup
 set nowb
@@ -74,9 +88,6 @@ set noswapfile
 
 " turn off mouse
 set mouse=""
-
-" Turn on numbers
-set number
 
 " Language-specific
 highlight! link elixirAtom rubySymbol
