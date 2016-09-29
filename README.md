@@ -32,6 +32,8 @@ Options
 * ctrl-l - run FZF search
 * ctrl-c - setup find and replace :s%/from/to/g
 * ctrl-v - Github activity
+* ctrl-m - run code
+* enter  - run code
 
 Info
 -----
