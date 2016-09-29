@@ -32,8 +32,8 @@ Options
 * ctrl-l - run FZF search
 * ctrl-c - setup find and replace :s%/from/to/g
 * ctrl-v - Github activity
-* ctrl-m - run code
-* enter  - run code
+* ctrl-m - run code (Make is setup for python)
+* enter  - run code (Make is setup for python)
 
 Info
 -----
