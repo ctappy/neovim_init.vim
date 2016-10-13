@@ -23,6 +23,10 @@ Plug 'vim-airline'
 Plug 'thirtythreeforty/lessspace.vim'
 " Tab completion
 Plug 'ervandew/supertab'
+" vim vagrant
+Plug 'hashivim/vim-vagrant'
+" vim puppet
+Plug 'rodjek/vim-puppet'
 """"""" SuperTab configuration """""""
 "let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
 function! Completefunc(findstart, base)
