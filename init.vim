@@ -25,6 +25,8 @@ Plug 'thirtythreeforty/lessspace.vim'
 Plug 'ervandew/supertab'
 " vim vagrant
 Plug 'hashivim/vim-vagrant'
+" Terraform plug
+Plug 'hashivim/vim-terraform'
 " vim puppet
 Plug 'rodjek/vim-puppet'
 """"""" SuperTab configuration """""""
