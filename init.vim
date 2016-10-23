@@ -55,7 +55,8 @@ set clipboard=unnamedplus
 """"""" Python stuff """""""
 syntax enable
 set number showmatch
-set shiftwidth=4 tabstop=4 softtabstop=4 expandtab autoindent
+" set shiftwidth=4 tabstop=2 softtabstop=2 expandtab autoindent
+set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
 let python_highlight_all = 1
 " run python code with :make and ctrl-m to run :make
 set makeprg=python\ %
