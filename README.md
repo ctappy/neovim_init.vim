@@ -1,10 +1,12 @@
 Neovim setup
 =========
 ####Install
-*Arch*
+#####Arch
+
 sudo pacman -S python2-neovim python-neovim
 
-*Everything else*
+#####Everything else
+
 https://github.com/neovim/neovim/wiki/Installing-Neovim
 
 
