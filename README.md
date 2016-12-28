@@ -3,7 +3,7 @@ Neovim setup
 ####Install
 #####Arch
 
-sudo pacman -S python2-neovim python-neovim
+sudo pacman -S python2-neovim python-neovim ruby-neovim
 
 #####Everything else
 
