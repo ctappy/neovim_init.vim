@@ -5,7 +5,7 @@ Neovim setup
 
 sudo pacman -S python2-neovim python-neovim
 
-yaourt -S ruby-neovim tidy-html5
+yaourt -S ruby-neovim tidy-html5 xclip
 
 #####Everything else
 
