@@ -1,5 +1,13 @@
 Neovim setup
 =========
+####Install
+*Arch*
+sudo pacman -S python2-neovim python-neovim
+
+*Everything else*
+https://github.com/neovim/neovim/wiki/Installing-Neovim
+
+
 ####Requirements
 
 * Your Vim must have Ruby support enabled. Check if :echo has('ruby') prints 1.
