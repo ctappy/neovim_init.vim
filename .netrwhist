@@ -1,6 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/usr/share/nvim/runtime/doc'
-let g:netrw_dirhist_2='/home/colby/terraform/terraform-git/examples/aws-two-tier'
-let g:netrw_dirhist_3='/usr/share/nvim/runtime/doc'
-let g:netrw_dirhist_4='/home/colby/terraform/terraform-git/examples/aws-two-tier'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/colby/codewilling/client-infra/Vagrant/openldap_proxy/tasks/ansible-openldap/vars'
+let g:netrw_dirhist_2='/home/colby/codewilling/client-infra/Vagrant/openldap_proxy/tasks/ansible-openldap'
+let g:netrw_dirhist_3='/home/colby/codewilling/client-infra/Vagrant/openldap_proxy/tasks/ansible-openldap/tasks'
+let g:netrw_dirhist_4='/home/colby/.oh-my-zsh'
+let g:netrw_dirhist_5='/home/colby/codewilling/python_pcap_merger_push'
