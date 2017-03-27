@@ -5,6 +5,7 @@
 Session.vim
 # temporary
 /.netrwhist
+.netrwhist
 *~
 # auto-generated tag files
 tags
