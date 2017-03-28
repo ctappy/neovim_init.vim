@@ -7,6 +7,8 @@ sudo pacman -S python2-neovim python-neovim
 
 yaourt -S ruby-neovim tidy-html5 xclip
 
+yaourt -S flake8
+
 #####Everything else
 
 https://github.com/neovim/neovim/wiki/Installing-Neovim
@@ -19,7 +21,7 @@ https://github.com/neovim/neovim/wiki/Installing-Neovim
 
 #### Copy and paste this into terminal
 ```
-cd ~/.config/ && git clone git@github.com:ctaperts/neovim_init.vim.git nvim && cd nvim/bundle/ && git clone https://github.com/Valloric/YouCompleteMe.git && cd YouCompleteMe/ && git submodule update --init --recursive && ./install.py
+cd ~/.config/ && git clone https://github.com/ctaperts/neovim_init.vim.git nvim && cd nvim/bundle/ && git clone https://github.com/Valloric/YouCompleteMe.git && cd YouCompleteMe/ && git submodule update --init --recursive && ./install.py
 ```
 
 #### Then install Plugs, type :q(return) twice to exit
