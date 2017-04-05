@@ -29,6 +29,10 @@ Plug 'hashivim/vim-vagrant'
 Plug 'hashivim/vim-terraform'
 " vim puppet
 Plug 'rodjek/vim-puppet'
+" Go plug
+Plug 'fatih/vim-go'
+Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
+
 """"""" SuperTab configuration """""""
 "let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
 function! Completefunc(findstart, base)
@@ -44,6 +48,24 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 "
 call plug#end()
 
+" YouCompleteMe and Jedi
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_use_ultisnips_completer = 1
+let g:ycm_seed_identifiers_with_syntax = 1
+
+au FileType go nmap <F5> <Plug> (go-run)
+au FileType go nmap <F6> <Plug>(go-build)
+au FileType go nmap <F7> <Plug>(go-test)
+
+let g:jedi#auto_initialization = 1
+let g:jedi#completions_enabled = 0
+let g:jedi#auto_vim_configuration = 0
+let g:jedi#smart_auto_mappings = 0
+let g:jedi#popup_on_dot = 0
+let g:jedi#completions_command = ""
+let g:jedi#show_call_signatures = "1"
+let g:jedi#show_call_signatures_delay = 0
 " Neomake and other build commands (ctrl-b)
 nnoremap <C-b> :w<cr>:Neomake<cr>
 
@@ -167,7 +189,6 @@ let g:syntastic_python_flake8_args='--ignore=F821,E302,E501,E266,E303'
 let g:syntastic_javascript_checkers   = ['eslint']
 let g:syntastic_enable_elixir_checker = 0
 let g:syntastic_go_checker            = ['golint']
-let g:syntastic_go_checkers           = ['go', 'golint', 'govet']
 let g:syntastic_aggregate_errors = 1
 
 highlight SyntasticErrorSign guifg=black guibg=#E01600 ctermfg=16 ctermbg=160
