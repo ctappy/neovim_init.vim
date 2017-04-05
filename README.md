@@ -1,7 +1,7 @@
 Neovim setup
 =========
-####Install
-#####Arch
+#### Install
+##### Arch
 
 sudo pacman -S python2-neovim python-neovim
 
@@ -9,12 +9,16 @@ yaourt -S ruby-neovim tidy-html5 xclip
 
 yaourt -S flake8
 
-#####Everything else
+##### Everything else
 
 https://github.com/neovim/neovim/wiki/Installing-Neovim
 
+##### Go
 
-####Requirements
+Create GOPATH and add to PATH
+
+
+#### Requirements
 
 * Your Vim must have Ruby support enabled. Check if :echo has('ruby') prints 1.
 * If you see LoadError on :ruby require 'json/pure', you need to install json_pure gem.
