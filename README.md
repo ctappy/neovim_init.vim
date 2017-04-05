@@ -5,7 +5,7 @@ Neovim setup
 
 sudo pacman -S python2-neovim python-neovim
 
-yaourt -S ruby-neovim tidy-html5 xclip
+yaourt -S ruby-neovim tidy-html5 xclip go
 
 yaourt -S flake8
 
@@ -16,6 +16,15 @@ https://github.com/neovim/neovim/wiki/Installing-Neovim
 ##### Go
 
 Create GOPATH and add to PATH
+I used
+```
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+```
+
+install gocode and go lint
+
+go get -u github.com/nsf/gocode && go get -u github.com/golang/lint/golint
 
 
 #### Requirements
