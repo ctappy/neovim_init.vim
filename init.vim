@@ -85,6 +85,9 @@ set makeprg=python\ %
 set autowrite
 map <C-M> :make<CR>
 
+" Copy current variable under cursor
+map <C-D> mp"+yiw`p
+
 " expand netrw tree
 let g:netrw_liststyle=3
 

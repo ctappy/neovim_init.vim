@@ -52,6 +52,7 @@ export GITHUB_TOKEN="<github token>"
 
 Options
 ------
+* ctrl-d - copy word under cursor
 * ctrl-e - open netrw
 * ctrl-s - open startify
 * ctrl-w - write to file
