@@ -1,12 +1,21 @@
 Neovim setup
 =========
-#### Install
+#### Install Neovim
 ##### Arch
 ```
 sudo pacman -S python2-neovim python-neovim
 
 # Depending on your package manager for the AUR
 yaourt -S ruby-neovim tidy-html5 xclip go flake8
+
+# Create GOPATH and add to PATH, add to .bashrc .zshrc to become permanent
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+# install gocode golint
+go get -u github.com/nsf/gocode && go get -u github.com/golang/lint/golint
+go get -u -ldflags -H=windowsgui github.com/nsf/gocode
 
 ```
 ##### Ubuntu
@@ -21,7 +30,7 @@ if [ $(id -u) != "0" ]; then
 fi
 
 apt-get install software-properties-common
-apt-get install python-dev python-pip python3-dev python3-pip xclip git-core automake libtool cmake python-dev python-pip python3-dev
+apt-get install python-dev python-pip python3-dev python3-pip xclip git-core automake libtool cmake python-dev python-pip python3-dev go gocode golint
 apt-get install python3-setuptools
 add-apt-repository ppa:neovim-ppa/stable
 apt-get update
@@ -48,21 +57,8 @@ rm /tmp/htmltidy -rf
 
 https://github.com/neovim/neovim/wiki/Installing-Neovim
 
-##### Go
+### Install neovim setup
 
-Create GOPATH and add to PATH
-I used
-```
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
-```
-
-install gocode and go lint
-
-```
-go get -u github.com/nsf/gocode && go get -u github.com/golang/lint/golint
-go get -u -ldflags -H=windowsgui github.com/nsf/gocode
-```
 #### Requirements
 
 * Your Vim must have Ruby support enabled. Check if :echo has('ruby') prints 1.
