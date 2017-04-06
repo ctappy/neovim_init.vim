@@ -207,14 +207,4 @@ highlight! ColorColumn ctermbg=233 guibg=#131313
 highlight! SignColumn ctermbg=233 guibg=#0D0D0D
 highlight! FoldColumn ctermbg=233 guibg=#0D0D0D
 
-" Lightline
-" Plug 'itchyny/lightline.vim'
-" {{{
-"  let g:lightline = {
-"      \ 'colorscheme': 'jellybeans',
-"      \ }
-"  set noshowmode
-" }}}
-
-
 " Thank you zenbro, some of this file was used creating his vimrc located https://github.com/zenbro/dotfiles/blob/master/.nvimrc
