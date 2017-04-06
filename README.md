@@ -29,8 +29,14 @@ if [ $(id -u) != "0" ]; then
     exit 1
 fi
 
+# install go ppa
+
+add-apt-repository ppa:longsleep/golang-backports
+apt-get update
+apt-get install golang-go
+
 apt-get install software-properties-common
-apt-get install python-dev python-pip python3-dev python3-pip xclip git-core automake libtool cmake python-dev python-pip python3-dev go gocode golint
+apt-get install python-dev python-pip python3-dev python3-pip xclip git-core automake libtool cmake python-dev python-pip python3-dev gocode golint
 apt-get install python3-setuptools
 add-apt-repository ppa:neovim-ppa/stable
 apt-get update
