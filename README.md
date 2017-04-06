@@ -36,7 +36,7 @@ pip2 install --upgrade neovim
 mkdir /tmp/htmltidy
 cd /tmp/htmltidy
 git clone https://github.com/w3c/tidy-html5
-cd tidy-html5
+cd tidy-html5/build/cmake
 cmake ../.. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
 make
 make install
