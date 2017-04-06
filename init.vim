@@ -108,6 +108,9 @@ map <C-L> :FZF<CR>
 " setup find and replace syntax
 map <C-C> :%s/from/to/g
 
+" git shortcut
+map <C-G> :Git commit -am
+
 " Call Startify by pressing f4 or ctrl-s
 map <F3> :SClose<CR>
 map <C-S> :SClose<CR>
