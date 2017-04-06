@@ -93,7 +93,7 @@ set autowrite
 map <C-M> :make<CR>
 
 " Copy current variable under cursor
-map <C-D> mp"+yiw`p
+map <C-C> mp"+yiw`p
 
 " expand netrw tree
 let g:netrw_liststyle=3
@@ -106,7 +106,7 @@ map <C-E> :Explore<CR>
 map <C-L> :FZF<CR>
 
 " setup find and replace syntax
-map <C-C> :%s///g
+map <C-F> :%s///g
 map <C-V> :%s/\<<C-r><C-w>\>/
 
 " git shortcut
