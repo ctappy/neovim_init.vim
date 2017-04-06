@@ -29,11 +29,26 @@ if [ $(id -u) != "0" ]; then
     exit 1
 fi
 
+confirm() {
+    # call with a prompt string or use a default
+    read -r -p "${1:-Are you sure? [y/N]} " response
+    case "$response" in
+        [yY][eE][sS]|[yY])
+            true
+            ;;
+        *)
+            false
+            ;;
+    esac
+}
+
 # install go ppa
 
-add-apt-repository ppa:longsleep/golang-backports
-apt-get update
-apt-get install golang-go
+confirm "install go ppa?" && add-apt-repository ppa:longsleep/golang-backports && apt-get update && apt-get install golang-go
+
+confirm "Install tidy-html5 syntax checker?" && mkdir /tmp/htmltidy && cd /tmp/htmltidy && git clone https://github.com/w3c/tidy-html5 && cd tidy-html5/build/cmake && cmake ../.. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr && make && make install && rm /tmp/htmltidy -rf
+
+confirm "Install flake8, python syntax checker?" && apt install flake8
 
 apt-get install software-properties-common
 apt-get install python-dev python-pip python3-dev python3-pip xclip git-core automake libtool cmake python-dev python-pip python3-dev gocode golint
@@ -41,22 +56,9 @@ apt-get install python3-setuptools
 add-apt-repository ppa:neovim-ppa/stable
 apt-get update
 apt-get install neovim
-apt install flake8
-# and possibly run the below if you are receiving errors about compiling with python
 easy_install3 pip
 pip2 install --upgrade neovim
 
-# install tidy-html5
-
-mkdir /tmp/htmltidy
-cd /tmp/htmltidy
-git clone https://github.com/w3c/tidy-html5
-cd tidy-html5/build/cmake
-cmake ../.. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
-make
-make install
-
-rm /tmp/htmltidy -rf
 ```
 
 ##### Everything else
