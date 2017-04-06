@@ -8,6 +8,9 @@ Plug 'flazz/vim-colorschemes'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " Any valid git URL is allowed
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rake'
 Plug 'dietsche/vim-lastplace'
@@ -48,6 +51,8 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 "
 call plug#end()
 
+" Airline theme
+let g:airline_theme='simple'
 " YouCompleteMe and Jedi
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
@@ -138,26 +143,6 @@ set mouse=""
 " Language-specific
 highlight! link elixirAtom rubySymbol
 
-" %F(Full file path)
-" %m(Shows + if modified - if not modifiable)
-" %r(Shows RO if readonly)
-" %<(Truncate here if necessary)
-" \ (Separator)
-" %=(Right align)
-" %l(Line number)
-" %v(Column number)
-" %L(Total number of lines)
-" %p(How far in file we are percentage wise)
-" %%(Percent sign)
-set statusline=%F%m%r%<\ %=%l,%v\ [%L]\ %p%%
-
-" Change the highlighting so it stands out
-hi statusline ctermbg=white ctermfg=black
-
-" Make sure it always shows
-set laststatus=2
-
-
 " github auto login
 let g:github_dashboard = { 'username': $GITHUB_USERNAME, 'password': $GITHUB_TOKEN }
 
@@ -216,15 +201,13 @@ highlight! SignColumn ctermbg=233 guibg=#0D0D0D
 highlight! FoldColumn ctermbg=233 guibg=#0D0D0D
 
 " Lightline
-Plug 'itchyny/lightline.vim'
+" Plug 'itchyny/lightline.vim'
 " {{{
-  let g:lightline = {
-      \ 'colorscheme': 'landscape',
-      \ }
-  set noshowmode
+"  let g:lightline = {
+"      \ 'colorscheme': 'jellybeans',
+"      \ }
+"  set noshowmode
 " }}}
-
-
 
 
 " Thank you zenbro, some of this file was used creating his vimrc located https://github.com/zenbro/dotfiles/blob/master/.nvimrc
