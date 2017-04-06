@@ -104,6 +104,9 @@ Options
 * ctrl-a - git add .
 * ctrl-g - git commit -m ''
 * ctrl-p - git push
+* F5     - run go
+* F6     - build go
+* F7     - test go
 
 Info
 -----
