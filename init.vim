@@ -106,7 +106,8 @@ map <C-E> :Explore<CR>
 map <C-L> :FZF<CR>
 
 " setup find and replace syntax
-map <C-C> :%s/from/to/g
+map <C-C> :%s///g
+map <C-V> :%s/\<<C-r><C-w>\>/
 
 " git shortcut
 map <C-A> :Git add .<CR>
@@ -126,7 +127,7 @@ inoremap <C-W> <C-O>:update<CR>
 map <C-Q> :qa<CR>
 
 " Run Github activity
-map <C-V> :GHActivity<cr>
+map <C-B> :GHActivity<cr>
 
 
 " run pathogen
