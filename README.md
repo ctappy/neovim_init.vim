@@ -103,8 +103,7 @@ Options
 * ctrl-b - Github activity
 * ctrl-m - run code (Make is setup for python)
 * enter  - run code (Make is setup for python)
-* ctrl-a - git add .
-* ctrl-g - git commit -m ''
+* ctrl-a - git commit -am ''
 * ctrl-p - git push
 * F5     - run go
 * F6     - build go
