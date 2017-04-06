@@ -110,8 +110,7 @@ map <C-F> :%s///g
 map <C-V> :%s/\<<C-r><C-w>\>/
 
 " git shortcut
-map <C-A> :Git add .<CR>
-map <C-G> :Git commit -m ''
+map <C-A> :Git commit -am ''
 map <C-P> :Git push <CR>
 
 " Call Startify by pressing f4 or ctrl-s
