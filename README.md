@@ -101,6 +101,9 @@ Options
 * ctrl-v - Github activity
 * ctrl-m - run code (Make is setup for python)
 * enter  - run code (Make is setup for python)
+* ctrl-a - git add .
+* ctrl-g - git commit -m ''
+* ctrl-p - git push
 
 Info
 -----
