@@ -39,7 +39,7 @@ git clone https://github.com/w3c/tidy-html5
 cd tidy-html5
 cmake ../.. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
 make
-sudo make install
+make install
 
 rm /tmp/htmltidy -rf
 ```
