@@ -109,7 +109,9 @@ map <C-L> :FZF<CR>
 map <C-C> :%s/from/to/g
 
 " git shortcut
-map <C-G> :Git commit -am
+map <C-A> :Git add .<CR>
+map <C-G> :Git commit -m ''
+map <C-P> :Git push <CR>
 
 " Call Startify by pressing f4 or ctrl-s
 map <F3> :SClose<CR>
