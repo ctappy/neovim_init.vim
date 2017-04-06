@@ -97,8 +97,9 @@ Options
 * ctrl-w - write to file
 * ctrl-q - exit vim
 * ctrl-l - run FZF search
-* ctrl-c - setup find and replace :s%/from/to/g
-* ctrl-v - Github activity
+* ctrl-c - setup find and replace :s%///g
+* ctrl-c - setup find and replace with current word under text
+* ctrl-b - Github activity
 * ctrl-m - run code (Make is setup for python)
 * enter  - run code (Make is setup for python)
 * ctrl-a - git add .
