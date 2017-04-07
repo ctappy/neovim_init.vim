@@ -8,6 +8,7 @@ Session.vim
 .netrwhist
 netrwhist
 plugged
+plugged*
 *~
 # auto-generated tag files
 tags
