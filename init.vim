@@ -6,7 +6,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'davidhalter/jedi-vim'
 Plug 'zchee/deoplete-jedi'
  " Plug 'alvan/vim-closetag'
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
 Plug 'flazz/vim-colorschemes'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " Any valid git URL is allowed
@@ -15,13 +15,13 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rails'
-Plug 'tpope/vim-rake'
+" Plug 'tpope/vim-rails'
+" Plug 'tpope/vim-rake'
 Plug 'dietsche/vim-lastplace'
 Plug 'myusuf3/numbers.vim'
-Plug 'christoomey/vim-rfactory'
+" Plug 'christoomey/vim-rfactory'
 " Neomake build tool (mapped below to <c-b>)
-Plug 'neomake/neomake'
+" Plug 'neomake/neomake'
 " autocompletion library for python
 " status bar
 " Plug 'vim-airline'
@@ -34,7 +34,7 @@ Plug 'hashivim/vim-vagrant'
 " Terraform plug
 Plug 'hashivim/vim-terraform'
 " vim puppet
-Plug 'rodjek/vim-puppet'
+" Plug 'rodjek/vim-puppet'
 " Go plug
 Plug 'fatih/vim-go'
 Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
