@@ -1,7 +1,8 @@
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
-Plug 'valloric/YouCompleteMe'
+" Plug 'valloric/YouCompleteMe'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
  " Plug 'alvan/vim-closetag'
 Plug 'scrooloose/syntastic'
 Plug 'flazz/vim-colorschemes'
@@ -56,10 +57,10 @@ call plug#end()
 " Airline theme
 let g:airline_theme='simple'
 " YouCompleteMe and Jedi
-let g:ycm_autoclose_preview_window_after_completion = 1
-let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_use_ultisnips_completer = 1
-let g:ycm_seed_identifiers_with_syntax = 1
+" let g:ycm_autoclose_preview_window_after_completion = 1
+" let g:ycm_autoclose_preview_window_after_insertion = 1
+" let g:ycm_use_ultisnips_completer = 1
+" let g:ycm_seed_identifiers_with_syntax = 1
 
 au FileType go nmap <F5> <Plug> (go-run)
 au FileType go nmap <F6> <Plug>(go-build)
