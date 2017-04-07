@@ -2,6 +2,7 @@ Neovim setup
 =========
 #### Install Neovim
 ##### Arch
+the latest neovim may have issue with some of these plugs, tested on 0.1.7
 ```
 sudo pacman -S python2-neovim python-neovim
 
