@@ -74,7 +74,7 @@ https://github.com/neovim/neovim/wiki/Installing-Neovim
 
 #### Copy and paste this into terminal
 ```
-cd ~/.config/ && git clone https://github.com/ctaperts/neovim_init.vim.git nvim && cd nvim/bundle/ && git clone https://github.com/Valloric/YouCompleteMe.git && cd YouCompleteMe/ && git submodule update --init --recursive && ./install.py
+git clone https://github.com/ctaperts/neovim_init.vim.git ~/.config/nvim
 ```
 
 #### Then install Plugs, type :q(return) twice to exit
