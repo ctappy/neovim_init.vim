@@ -155,7 +155,7 @@ set mouse=""
 highlight! link elixirAtom rubySymbol
 
 " github auto login
-let g:github_dashboard = { 'username': $GITHUB_USERNAME, 'password': $GITHUB_TOKEN }
+" let g:github_dashboard = { 'username': $GITHUB_USERNAME, 'password': $GITHUB_TOKEN }
 
 
 " Syntastastic syntax
