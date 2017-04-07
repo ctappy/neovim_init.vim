@@ -9,6 +9,12 @@ Session.vim
 netrwhist
 plugged
 plugged*
+autoload
+autoload*
+bundle
+bundle*
+ftplugin
+ftplugin*
 *~
 # auto-generated tag files
 tags
