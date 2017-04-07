@@ -9,8 +9,6 @@ Session.vim
 netrwhist
 plugged
 plugged*
-autoload
-autoload*
 bundle
 bundle*
 ftplugin
