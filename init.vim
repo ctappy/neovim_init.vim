@@ -21,7 +21,7 @@ Plug 'dietsche/vim-lastplace'
 Plug 'myusuf3/numbers.vim'
 " Plug 'christoomey/vim-rfactory'
 " Neomake build tool (mapped below to <c-b>)
-" Plug 'neomake/neomake'
+Plug 'neomake/neomake'
 " autocompletion library for python
 " status bar
 " Plug 'vim-airline'
@@ -77,11 +77,11 @@ let g:jedi#completions_command = ""
 let g:jedi#show_call_signatures = "1"
 let g:jedi#show_call_signatures_delay = 0
 " Neomake and other build commands (ctrl-b)
-" nnoremap <C-b> :w<cr>:Neomake<cr>
+nnoremap <C-b> :w<cr>:Neomake<cr>
 
-" autocmd BufNewFile,BufRead *.tex,*.bib noremap <buffer> <C-b> :w<cr>:new<bar>r !make<cr>:setlocal buftype=nofile<cr>:setlocal bufhidden=hide<cr>:setlocal noswapfile<cr>
-" autocmd BufNewFile,BufRead *.tex,*.bib imap <buffer> <C-b> <Esc><C-b>
-" autocmd! QuitPre * let g:neomake_verbose = 0
+autocmd BufNewFile,BufRead *.tex,*.bib noremap <buffer> <C-b> :w<cr>:new<bar>r !make<cr>:setlocal buftype=nofile<cr>:setlocal bufhidden=hide<cr>:setlocal noswapfile<cr>
+autocmd BufNewFile,BufRead *.tex,*.bib imap <buffer> <C-b> <Esc><C-b>
+autocmd! QuitPre * let g:neomake_verbose = 0
 " copy and paste using system clipboard
 set clipboard=unnamedplus
 """"""" Python stuff """""""
