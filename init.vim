@@ -1,4 +1,4 @@
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 " Make sure you use single quotes
 " Plug 'valloric/YouCompleteMe'
@@ -10,7 +10,7 @@ Plug 'scrooloose/syntastic'
 Plug 'flazz/vim-colorschemes'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " Any valid git URL is allowed
-Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+" Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
@@ -24,7 +24,7 @@ Plug 'christoomey/vim-rfactory'
 Plug 'neomake/neomake'
 " autocompletion library for python
 " status bar
-Plug 'vim-airline'
+" Plug 'vim-airline'
 " Remove extraneous whitespace when edit mode is exited
 Plug 'thirtythreeforty/lessspace.vim'
 " Tab completion
