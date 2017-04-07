@@ -38,6 +38,7 @@ Plug 'hashivim/vim-terraform'
 " Go plug
 Plug 'fatih/vim-go'
 Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
+Plug 'zchee/deoplete-go'
 
 
 let g:deoplete#enable_at_startup = 1
