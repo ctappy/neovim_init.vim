@@ -114,13 +114,10 @@ Info
 -----
 Includes:
 * [fzf](https://github.com/junegunn/fzf.vim)
-* [vim-rake](https://github.com/tpope/vim-rake)
 * [vim-startify](https://github.com/mhinz/vim-startify)
 * [lightline.vim](https://github.com/itchyny/lightline.vim)
 * [vim-github-dashboard](https://github.com/junegunn/vim-github-dashboard)
-* [YouCompleteMe](https://valloric.github.io/YouCompleteMe/)
 * [syntastic](https://github.com/scrooloose/syntastic)
 * [vim-colorschemes](https://github.com/flazz/vim-colorschemes)
 * [vim-lastplace](https://github.com/dietsche/vim-lastplace)
 * [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides) (only works in gvim)
-* [vim-rails](https://github.com/tpope/vim-rails)
