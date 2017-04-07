@@ -3,6 +3,8 @@ call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
 " Plug 'valloric/YouCompleteMe'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'davidhalter/jedi-vim'
+Plug 'zchee/deoplete-jedi'
  " Plug 'alvan/vim-closetag'
 Plug 'scrooloose/syntastic'
 Plug 'flazz/vim-colorschemes'
@@ -21,7 +23,6 @@ Plug 'christoomey/vim-rfactory'
 " Neomake build tool (mapped below to <c-b>)
 Plug 'neomake/neomake'
 " autocompletion library for python
-Plug 'davidhalter/jedi-vim'
 " status bar
 Plug 'vim-airline'
 " Remove extraneous whitespace when edit mode is exited
