@@ -108,4 +108,3 @@ Includes:
 * [syntastic](https://github.com/scrooloose/syntastic)
 * [vim-colorschemes](https://github.com/flazz/vim-colorschemes)
 * [vim-lastplace](https://github.com/dietsche/vim-lastplace)
-* [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides) (only works in gvim)
