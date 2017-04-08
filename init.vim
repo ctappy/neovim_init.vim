@@ -9,8 +9,7 @@ Plug 'zchee/deoplete-jedi'
 Plug 'scrooloose/syntastic'
 Plug 'flazz/vim-colorschemes'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-" Any valid git URL is allowed
-" Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+" status bar
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
@@ -20,11 +19,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'dietsche/vim-lastplace'
 Plug 'myusuf3/numbers.vim'
 " Plug 'christoomey/vim-rfactory'
-" Neomake build tool (mapped below to <c-b>)
-" Plug 'neomake/neomake'
-" autocompletion library for python
-" status bar
-" Plug 'vim-airline'
 " Remove extraneous whitespace when edit mode is exited
 Plug 'thirtythreeforty/lessspace.vim'
 " Tab completion
@@ -58,12 +52,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 call plug#end()
 
 " Airline theme
-let g:airline_theme='simple'
-" YouCompleteMe and Jedi
-" let g:ycm_autoclose_preview_window_after_completion = 1
-" let g:ycm_autoclose_preview_window_after_insertion = 1
-" let g:ycm_use_ultisnips_completer = 1
-" let g:ycm_seed_identifiers_with_syntax = 1
+let g:airline_theme='jellybeans'
 
 au FileType go nmap <F5> <Plug> (go-run)
 au FileType go nmap <F6> <Plug>(go-build)
@@ -129,10 +118,6 @@ inoremap <C-W> <C-O>:update<CR>
 " allow quit via ctrl-q
 map <C-Q> :qa<CR>
 
-" Run Github activity
-map <C-B> :GHActivity<cr>
-
-
 " run pathogen
 execute pathogen#infect()
 
@@ -153,10 +138,6 @@ set mouse=""
 
 " Language-specific
 highlight! link elixirAtom rubySymbol
-
-" github auto login
-" let g:github_dashboard = { 'username': $GITHUB_USERNAME, 'password': $GITHUB_TOKEN }
-
 
 " Syntastastic syntax
 set statusline+=%#warningmsg#
