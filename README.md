@@ -14,8 +14,7 @@ yaourt -S ruby-neovim tidy-html5 xclip go flake8
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-# install gocode golint
-go get -u github.com/nsf/gocode && go get -u github.com/golang/lint/golint
+# install gocode
 go get -u -ldflags -H=windowsgui github.com/nsf/gocode
 
 ```
@@ -81,16 +80,6 @@ git clone https://github.com/ctaperts/neovim_init.vim.git ~/.config/nvim
 #### Then install Plugs, type :q(return) twice to exit
 nvim -c PlugInstall
 
-#### Setup Github Dashboard
-[Instruction to setup github token](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)
-
-add to bashrc 
-
-```
-export GITHUB_USERNAME="<username>"
-export GITHUB_TOKEN="<github token>"
-```
-
 Options
 ------
 * ctrl-e - open netrw
@@ -101,7 +90,6 @@ Options
 * ctrl-c - copy current word under cursor to memory buffer
 * ctrl-f - setup find and replace :s%///g
 * ctrl-v - setup find and replace with current word under text
-* ctrl-b - Github activity
 * ctrl-m - run code (Make is setup for python)
 * enter  - run code (Make is setup for python)
 * ctrl-a - git commit -am ''
