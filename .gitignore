@@ -13,6 +13,7 @@ bundle
 bundle*
 ftplugin
 ftplugin*
+gocomplete.vim
 *~
 # auto-generated tag files
 tags
