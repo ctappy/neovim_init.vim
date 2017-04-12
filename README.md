@@ -91,12 +91,12 @@ Options
 * ctrl-f - setup find and replace :s%///g
 * ctrl-v - setup find and replace with current word under text
 * ctrl-m - run code (Make is setup for python)
-* enter  - run code (Make is setup for python)
+* enter  - run code (Make is setup for python or golang)
 * ctrl-a - git commit -am ''
 * ctrl-p - git push
-* F5     - run go
 * F6     - build go
 * F7     - test go
+* F8     - run go
 
 Info
 -----

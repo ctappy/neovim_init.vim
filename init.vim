@@ -54,9 +54,9 @@ call plug#end()
 " Airline theme
 let g:airline_theme='jellybeans'
 
-au FileType go nmap <F5> <Plug> (go-run)
 au FileType go nmap <F6> <Plug>(go-build)
 au FileType go nmap <F7> <Plug>(go-test)
+au FileType go nmap <F8> <Plug>(go-run)
 
 let g:jedi#auto_initialization = 1
 let g:jedi#completions_enabled = 0
@@ -83,7 +83,8 @@ let python_highlight_all = 1
 " run python code with :make and ctrl-m to run :make
 set makeprg=python\ %
 set autowrite
-map <C-M> :make<CR>
+au FileType python map <C-M> :make<CR>
+au FileType go nmap <C-M> <Plug>(go-run)
 
 " Copy current variable under cursor
 map <C-C> mp"+yiw`p
@@ -191,5 +192,3 @@ highlight! ColorColumn ctermbg=233 guibg=#131313
 " Various columns
 highlight! SignColumn ctermbg=233 guibg=#0D0D0D
 highlight! FoldColumn ctermbg=233 guibg=#0D0D0D
-
-" Thank you zenbro, some of this file was used creating his vimrc located https://github.com/zenbro/dotfiles/blob/master/.nvimrc
