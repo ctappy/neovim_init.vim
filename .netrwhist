@@ -1,3 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/colby/.config/nvim'
+let g:netrw_dirhist_2='/home/colby/codewilling/ansible/cw_servers/ctaperts.icinga2_server'
+let g:netrw_dirhist_3='/home/colby/codewilling/ansible/cw_servers/ctaperts.icinga2_server/meta'
+let g:netrw_dirhist_4='/home/colby/codewilling/ansible/cw_servers/ctaperts.icinga2_server/tasks'
+let g:netrw_dirhist_5='/home/colby/codewilling/ansible/cw_servers/ctaperts.icinga2_server/vars'
+let g:netrw_dirhist_6='/home/colby/codewilling/ansible/cw_servers/ctaperts.icinga2_server'
+let g:netrw_dirhist_7='/home/colby/codewilling/ansible/cw_servers/ctaperts.icinga2_server/templates'
+let g:netrw_dirhist_8='/home/colby/codewilling/ansible/cw_servers/ctaperts.icinga2_client/tasks'
+let g:netrw_dirhist_9='/home/colby/codewilling/ansible/cw_servers/ctaperts.icinga2_server/tasks'
