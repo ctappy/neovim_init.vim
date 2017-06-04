@@ -15,7 +15,7 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 # install gocode
-go get -u -ldflags -H=windowsgui github.com/nsf/gocode
+go get -u github.com/nsf/gocode
 
 ```
 ##### Ubuntu
