@@ -38,6 +38,10 @@ Plug 'zchee/deoplete-go'
 Plug 'pangloss/vim-javascript'
 Plug 'chemzqm/vim-jsx-improve'
 Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'mattn/emmet-vim'
+
+" emmet-vim plug
+let g:user_emmet_leader_key='<C-k>'
 
 let g:deoplete#enable_at_startup = 1
 """"""" SuperTab configuration """""""
