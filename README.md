@@ -15,7 +15,7 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 # install gocode
-go get -u -ldflags -H=windowsgui github.com/nsf/gocode
+go get -u github.com/nsf/gocode
 
 ```
 ##### Ubuntu
@@ -89,7 +89,7 @@ Options
 * ctrl-l - run FZF search
 * ctrl-c - copy current word under cursor to memory buffer
 * ctrl-f - setup find and replace :s%///g
-* ctrl-v - setup find and replace with current word under text
+* ctrl-g - setup find and replace with current word under text
 * ctrl-m - run code (Make is setup for python)
 * enter  - run code (Make is setup for python or golang)
 * ctrl-a - git commit -am ''

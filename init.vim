@@ -34,6 +34,14 @@ Plug 'fatih/vim-go'
 Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
 Plug 'zchee/deoplete-go'
 
+" Reach plugs
+Plug 'pangloss/vim-javascript'
+Plug 'chemzqm/vim-jsx-improve'
+Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'mattn/emmet-vim'
+
+" emmet-vim plug
+let g:user_emmet_leader_key='<Tab>'
 
 let g:deoplete#enable_at_startup = 1
 """"""" SuperTab configuration """""""
@@ -100,8 +108,8 @@ map <C-E> :Explore<CR>
 map <C-L> :FZF<CR>
 
 " setup find and replace syntax
-map <C-F> :%s///g
-map <C-V> :%s/\<<C-r><C-w>\>/
+map <C-F> :%s:::g
+map <C-G> :%s/\<<C-r><C-w>\>/
 
 " git shortcut
 map <C-A> :Git commit -am ''
