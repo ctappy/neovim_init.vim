@@ -120,9 +120,9 @@ map <F3> :SClose<CR>
 map <C-S> :SClose<CR>
 
 " Use CTRL-W for saving, also in Insert mode
-noremap <C-W> :update<CR>
-vnoremap <C-W> <C-C>:update<CR>
-inoremap <C-W> <C-O>:update<CR>
+noremap <C-U> :update<CR>
+vnoremap <C-U> <C-C>:update<CR>
+inoremap <C-U> <C-O>:update<CR>
 
 " allow quit via ctrl-q
 map <C-Q> :qa<CR>

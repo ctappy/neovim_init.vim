@@ -84,7 +84,7 @@ Options
 ------
 * ctrl-e - open netrw
 * ctrl-s - open startify
-* ctrl-w - write to file
+* ctrl-u - write to file
 * ctrl-q - exit vim
 * ctrl-l - run FZF search
 * ctrl-c - copy current word under cursor to memory buffer
