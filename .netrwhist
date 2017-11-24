@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+=======
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =0
+>>>>>>> 38a852d34b022b510df7ab453cae87ea07334889
