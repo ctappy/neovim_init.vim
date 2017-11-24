@@ -6,7 +6,7 @@
 Session.vim
 # temporary
 /.netrwhist
-.netrwhist
+.netrwhi*
 netrwhist
 plugged
 plugged*
