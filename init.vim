@@ -2,9 +2,6 @@ call plug#begin('~/.config/nvim/plugged')
 
 " Make sure you use single quotes
 " Plug 'valloric/YouCompleteMe'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'davidhalter/jedi-vim'
-Plug 'zchee/deoplete-jedi'
  " Plug 'alvan/vim-closetag'
 Plug 'scrooloose/syntastic'
 Plug 'flazz/vim-colorschemes'
@@ -39,6 +36,10 @@ Plug 'pangloss/vim-javascript'
 Plug 'chemzqm/vim-jsx-improve'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'mattn/emmet-vim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-jedi'
+Plug 'davidhalter/jedi-vim'
+Plug 'mhinz/vim-startify'
 
 " emmet-vim plug
 let g:user_emmet_leader_key='<Tab>'
@@ -50,7 +51,6 @@ function! Completefunc(findstart, base)
     return "\<c-x>\<c-p>"
 endfunction
 
-Plug 'mhinz/vim-startify'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " {{{
