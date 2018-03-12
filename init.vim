@@ -31,7 +31,9 @@ Plug 'fatih/vim-go'
 Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
 Plug 'zchee/deoplete-go'
 
-" Reach plugs
+Plug 'scrooloose/nerdtree'
+
+" React plugs
 Plug 'pangloss/vim-javascript'
 Plug 'chemzqm/vim-jsx-improve'
 Plug 'MaxMEllon/vim-jsx-pretty'
@@ -99,6 +101,21 @@ map <C-C> mp"+yiw`p
 
 " expand netrw tree
 let g:netrw_liststyle=3
+
+" let mapleader=" "
+let mapleader = "\<Space>"
+ map <leader>h :wincmd h<CR>
+ map <leader>j :wincmd j<CR>
+ map <leader>k :wincmd k<CR>
+ map <leader>l :wincmd l<CR>
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" Nerd tree
+map <C-n> :NERDTreeToggle<CR>
 
 " Call Explorer by pressing f2 or ctrl-e
 map <F2> :Explore<CR>
