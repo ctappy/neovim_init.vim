@@ -116,6 +116,7 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " Nerd tree
 map <C-n> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle<CR>
 
 " Call Explorer by pressing f2 or ctrl-e
 map <F2> :Explore<CR>
@@ -141,8 +142,8 @@ noremap <C-U> :update<CR>
 vnoremap <C-U> <C-C>:update<CR>
 inoremap <C-U> <C-O>:update<CR>
 
-" allow quit via ctrl-q
-map <C-Q> :qa<CR>
+" switch windows faster
+map <C-Q> <c-w><c-w>
 
 " run pathogen
 execute pathogen#infect()
