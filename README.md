@@ -7,10 +7,10 @@ Neovim setup
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-# install gocode
+###### install gocode
 go get -u github.com/nsf/gocode
 
-# install go please
+###### install go please
 go get -u golang.org/x/tools/cmd/gopls
 
 ##### Arch
