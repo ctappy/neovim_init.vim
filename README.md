@@ -1,6 +1,18 @@
 Neovim setup
 =========
 #### Install Neovim
+
+##### Create GOPATH and add to PATH, add to .bashrc .zshrc to become permanent
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+###### install gocode
+go get -u github.com/nsf/gocode
+
+###### install go please
+go get -u golang.org/x/tools/cmd/gopls
+
 ##### Arch
 the latest neovim may have issue with some of these plugs, tested up to 0.2.0
 ```
@@ -9,14 +21,6 @@ sudo pacman -S python2-neovim python-neovim
 # Depending on your package manager for the AUR
 yaourt -S ruby-neovim tidy-html5 xclip go
 pip install pylint
-
-# Create GOPATH and add to PATH, add to .bashrc .zshrc to become permanent
-
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
-
-# install gocode
-go get -u github.com/nsf/gocode
 
 ```
 ##### Ubuntu
