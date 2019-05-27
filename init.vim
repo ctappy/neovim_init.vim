@@ -1,7 +1,8 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " Make sure you use single quotes
-" Plug 'valloric/YouCompleteMe'
+Plug 'valloric/YouCompleteMe'
+let g:ycm_auto_trigger = 0
  " Plug 'alvan/vim-closetag'
 Plug 'scrooloose/syntastic'
 Plug 'flazz/vim-colorschemes'
@@ -10,6 +11,8 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
+let g:gitgutter_grep=''
+set updatetime=100
 Plug 'tpope/vim-fugitive'
 " Plug 'tpope/vim-rails'
 " Plug 'tpope/vim-rake'
@@ -191,7 +194,10 @@ let g:syntastic_style_error_symbol    = ':('
 let g:syntastic_style_warning_symbol  = ':('
 let g:syntastic_vim_checkers          = ['vint']
 let g:syntastic_elixir_checkers       = ['elixir']
-let g:syntastic_python_checkers       = ['flake8']
+let g:syntastic_python_checkers       = ['pylint']
+let g:syntastic_python_pylint_post_args =
+      \ '--module-rgx=''[a-zA-Z_][a-zA-Z0-9_]*$'' --max-line-length 120 --disable=line-too-long,missing-docstring,invalid-name,fixme,broad-except,too-many-arguments,too-many-locals,too-many-branches,too-many-statements'
+  " '--module-rgx=''[a-zA-Z_][a-zA-Z0-9_]*$'' --max-line-length 120 --indent-string=''\t'' --disable=mixed-indentation,line-too-long,missing-docstring,too-many-public-methods,too-few-public-methods,import-error,no-name-in-module,not-callable,locally-disabled,bad-continuation'
 let g:syntastic_python_flake8_args='--ignore=F821,E302,E501,E266,E303,W605'
 let g:syntastic_javascript_checkers   = ['eslint']
 let g:syntastic_enable_elixir_checker = 0

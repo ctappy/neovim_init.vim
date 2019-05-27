@@ -7,7 +7,8 @@ the latest neovim may have issue with some of these plugs, tested up to 0.2.0
 sudo pacman -S python2-neovim python-neovim
 
 # Depending on your package manager for the AUR
-yaourt -S ruby-neovim tidy-html5 xclip go flake8
+yaourt -S ruby-neovim tidy-html5 xclip go
+pip install pylint
 
 # Create GOPATH and add to PATH, add to .bashrc .zshrc to become permanent
 
@@ -48,7 +49,7 @@ confirm "install go ppa?" && add-apt-repository ppa:longsleep/golang-backports &
 
 confirm "Install tidy-html5 syntax checker?" && mkdir /tmp/htmltidy && cd /tmp/htmltidy && git clone https://github.com/w3c/tidy-html5 && cd tidy-html5/build/cmake && cmake ../.. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr && make && make install && rm /tmp/htmltidy -rf
 
-confirm "Install flake8, python syntax checker?" && apt install flake8
+confirm "Install pylint, python syntax checker?" && pip install pylint
 
 apt-get install software-properties-common
 apt-get install python-dev python-pip python3-dev python3-pip xclip git-core automake libtool cmake python-dev python-pip python3-dev gocode golint
