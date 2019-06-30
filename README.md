@@ -2,6 +2,14 @@ Neovim setup
 =========
 #### Install Neovim
 
+##### TS
+```
+npm -g install typescript
+npm install -g neovim
+```
+May need to install the npm packages for rplugin see
+`https://github.com/mhartington/nvim-typescript/issues/197#issuecomment-469134118`
+
 ##### Create GOPATH and add to PATH, add to .bashrc .zshrc to become permanent
 
 export GOPATH=$HOME/go

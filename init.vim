@@ -46,6 +46,20 @@ Plug 'zchee/deoplete-jedi'
 Plug 'davidhalter/jedi-vim'
 Plug 'mhinz/vim-startify'
 
+" Angular
+" Typescrript syntax support
+Plug 'https://github.com/leafgarland/typescript-vim'
+" Template strings syntax support
+" FIXME: throws E488 trailing characters error when opening .ts files
+Plug 'https://github.com/Quramy/vim-js-pretty-template'
+" TS features plugin
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+Plug 'Shougo/denite.nvim'
+" Angular CLI plugin
+" Use :Ng command in Vim
+Plug 'https://github.com/bdauria/angular-cli.vim'
+
 " emmet-vim plug
 let g:user_emmet_leader_key='<Tab>'
 
@@ -63,6 +77,16 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " }}}
 "
 call plug#end()
+
+" Enable displaying TS compilation errors in the QuickFix window
+let g:typescript_compiler_binary = 'tsc'
+let g:typescript_compiler_options = ''
+autocmd QuickFixCmdPost [^l]* nested cwindow
+autocmd QuickFixCmdPost    l* nested lwindow
+
+" Disable VIM Scratch Preview Window included at the top of the editted files
+" See also: https://stackoverflow.com/questions/3105307/how-do-you-automatically-remove-the-preview-window-after-autocompletion-in-vim
+set completeopt-=preview
 
 " Airline theme
 let g:airline_theme='jellybeans'
@@ -181,7 +205,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_html_tidy_exec = 'tidy'
-let g:syntastic_html_tidy_ignore_errors = [ '<iframe> proprietary attribute "allowtransparency"', '<meta> proprietary attribute "description"', '<meta> proprietary attribute "author"', '<ul> proprietary attribute "for"', '<li> proprietary attribute', 'missing <li>']
+let g:syntastic_html_tidy_ignore_errors = [ '<iframe> proprietary attribute "allowtransparency"', '<meta> proprietary attribute "description"', '<meta> proprietary attribute "author"', '<ul> proprietary attribute "for"', '<li> proprietary attribute', 'missing <li>', '<app-root> is not recognized! Did you mean to enable the custom-tags option?', 'discarding unexpected <app-root>', 'discarding unexpected </app-root>']
 let g:syntastic_enable_signs          = 1
 let g:syntastic_enable_highlighting   = 1
 let g:syntastic_cpp_check_header      = 1
@@ -203,6 +227,8 @@ let g:syntastic_javascript_checkers   = ['eslint']
 let g:syntastic_enable_elixir_checker = 0
 let g:syntastic_go_checkers           = ['go']
 let g:syntastic_aggregate_errors = 1
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_typescript_checkers = ['tsuquyomi']
 
 highlight SyntasticErrorSign guifg=black guibg=#E01600 ctermfg=16 ctermbg=160
 highlight SyntasticErrorLine guibg=#0D0D0D ctermbg=232
