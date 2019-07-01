@@ -78,6 +78,9 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 "
 call plug#end()
 
+" Size of nerdtree width
+let g:NERDTreeWinSize=40
+
 " Enable displaying TS compilation errors in the QuickFix window
 let g:typescript_compiler_binary = 'tsc'
 let g:typescript_compiler_options = ''
@@ -205,7 +208,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_html_tidy_exec = 'tidy'
-let g:syntastic_html_tidy_ignore_errors = [ '<iframe> proprietary attribute "allowtransparency"', '<meta> proprietary attribute "description"', '<meta> proprietary attribute "author"', '<ul> proprietary attribute "for"', '<li> proprietary attribute', 'missing <li>', 'is not recognized', 'discarding unexpected', 'attribute name', 'lacks value', 'proprietary attribute', 'has invalid value']
+let g:syntastic_html_tidy_ignore_errors = [ '<iframe> proprietary attribute "allowtransparency"', '<meta> proprietary attribute "description"', '<meta> proprietary attribute "author"', '<ul> proprietary attribute "for"', '<li> proprietary attribute', 'missing <li>', 'is not recognized', 'discarding unexpected', 'attribute name', 'lacks value', 'proprietary attribute', 'has invalid value', 'plain text', 'trimming empty']
 let g:syntastic_enable_signs          = 1
 let g:syntastic_enable_highlighting   = 1
 let g:syntastic_cpp_check_header      = 1
