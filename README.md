@@ -2,9 +2,9 @@ Neovim setup
 =========
 #### Install Neovim
 
-##### TS and Tern
+##### TS ESlint Tern
 ```
-npm -g install typescript tern
+npm -g install typescript tern eslint
 npm install -g neovim
 ```
 May need to install the npm packages for rplugin see
