@@ -2,9 +2,9 @@ Neovim setup
 =========
 #### Install Neovim
 
-##### TS
+##### TS and Tern
 ```
-npm -g install typescript
+npm -g install typescript tern
 npm install -g neovim
 ```
 May need to install the npm packages for rplugin see
@@ -92,6 +92,23 @@ git clone https://github.com/ctaperts/neovim_init.vim.git ~/.config/nvim
 
 #### Then install Plugs, type :q(return) twice to exit
 nvim -c PlugInstall
+
+#### Tern js setup
+`~/.tern-config`
+```
+{
+  "libs": [
+    "browser",
+    "jquery",
+    "react"
+  ],
+  "plugins": {
+    "doc_comment": null,
+    "angular": {},
+    "node": {}
+  }
+}
+```
 
 Options
 ------

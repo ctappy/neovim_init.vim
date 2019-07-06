@@ -36,6 +36,9 @@ Plug 'zchee/deoplete-go'
 
 Plug 'scrooloose/nerdtree'
 
+" js
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install && npm install -g tern', 'for': 'javascript' }
+
 " React plugs
 Plug 'pangloss/vim-javascript'
 Plug 'chemzqm/vim-jsx-improve'
@@ -43,6 +46,7 @@ Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'mattn/emmet-vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi'
+Plug 'carlitux/deoplete-ternjs'
 Plug 'davidhalter/jedi-vim'
 Plug 'mhinz/vim-startify'
 
@@ -253,3 +257,19 @@ highlight! ColorColumn ctermbg=233 guibg=#131313
 " Various columns
 highlight! SignColumn ctermbg=233 guibg=#0D0D0D
 highlight! FoldColumn ctermbg=233 guibg=#0D0D0D
+
+" enhance YCM JS completion with tern's smarts
+autocmd FileType javascript setlocal omnifunc=tern#Complete
+
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_ignore_case = 1
+let g:deoplete#enable_smart_case = 1
+let g:deoplete#enable_camel_case = 1
+let g:deoplete#enable_refresh_always = 1
+let g:deoplete#max_abbr_width = 0
+let g:deoplete#max_menu_width = 0
+let g:deoplete#omni#input_patterns = get(g:,'deoplete#omni#input_patterns',{})
+let g:tern_request_timeout = 1
+let g:tern_request_timeout = 6000
+let g:tern#command = ["tern"]
+let g:tern#arguments = [" - persistent"]
