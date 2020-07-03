@@ -122,7 +122,7 @@ Options
 * ctrl-g - setup find and replace with current word under text
 * ctrl-m - run code (Make is setup for python)
 * enter  - run code (Make is setup for python or golang)
-* ctrl-a - git commit -am ''
+* ctrl-y - YouCompleteMe FixIt
 * ctrl-p - git push
 * F6     - build go
 * F7     - test go

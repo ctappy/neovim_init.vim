@@ -163,10 +163,6 @@ map <C-L> :FZF<CR>
 map <C-F> :%s:::g
 map <C-G> :%s/\<<C-r><C-w>\>/
 
-" git shortcut
-map <C-A> :Git commit -am ''
-map <C-P> :Git push <CR>
-
 " Call Startify by pressing f4 or ctrl-s
 map <F3> :SClose<CR>
 map <C-S> :SClose<CR>
@@ -178,6 +174,9 @@ inoremap <C-U> <C-O>:update<CR>
 
 " switch windows faster
 map <C-Q> <c-w><c-w>
+
+" FixIt
+map <C-Y> :YcmCompleter FixIt<CR>
 
 " run pathogen
 execute pathogen#infect()
