@@ -93,6 +93,10 @@ git clone https://github.com/ctaperts/neovim_init.vim.git ~/.config/nvim
 #### Then install Plugs, type :q(return) twice to exit
 nvim -c PlugInstall
 
+#### YouCompleteMe setup
+```
+cd ~/.config/nvim/plugged/YouCompleteMe && ./install.py
+```
 #### Tern js setup
 `~/.tern-config`
 ```
