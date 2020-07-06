@@ -9,6 +9,7 @@ npm install -g neovim
 May need to install the npm packages for rplugin see
 `https://github.com/mhartington/nvim-typescript/issues/197#issuecomment-469134118`
 ```
+# after cloning and installing plugins
 cd ~/.config/nvim/plugged/nvim-typescript/rplugin/node/nvim_typescript
 npm i
 npm run build
