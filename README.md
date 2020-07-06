@@ -1,6 +1,5 @@
 Neovim setup
 =========
-#### Install Neovim
 
 ##### TS ESlint Tern
 ```
@@ -9,17 +8,27 @@ npm install -g neovim
 ```
 May need to install the npm packages for rplugin see
 `https://github.com/mhartington/nvim-typescript/issues/197#issuecomment-469134118`
+```
+cd ~/.config/nvim/plugged/nvim-typescript/rplugin/node/nvim_typescript
+npm i
+npm run build
+```
 
 ##### Create GOPATH and add to PATH, add to .bashrc .zshrc to become permanent
-
+```
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+```
 
 ###### install gocode
+```
 go get -u github.com/nsf/gocode
+```
 
 ###### install go please
+```
 go get -u golang.org/x/tools/cmd/gopls
+```
 
 ##### Arch
 the latest neovim may have issue with some of these plugs, tested up to 0.2.0
@@ -78,7 +87,7 @@ pip2 install --upgrade neovim
 
 https://github.com/neovim/neovim/wiki/Installing-Neovim
 
-### Install neovim setup
+# Install neovim setup
 
 #### Requirements
 
