@@ -91,7 +91,9 @@ git clone https://github.com/ctaperts/neovim_init.vim.git ~/.config/nvim
 ```
 
 #### Then install Plugs, type :q(return) twice to exit
+```
 nvim -c PlugInstall
+```
 
 #### YouCompleteMe setup
 ```
