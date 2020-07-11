@@ -233,7 +233,7 @@ let g:syntastic_javascript_checkers   = ['eslint']
 let g:syntastic_enable_elixir_checker = 0
 let g:syntastic_go_checkers           = ['go']
 let g:syntastic_aggregate_errors = 1
-let g:syntastic_typescript_checkers = ['tslint', 'tsuquyomi']
+let g:syntastic_typescript_checkers = ['eslint']
 
 highlight SyntasticErrorSign guifg=black guibg=#E01600 ctermfg=16 ctermbg=160
 highlight SyntasticErrorLine guibg=#0D0D0D ctermbg=232
