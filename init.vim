@@ -249,7 +249,7 @@ highlight link SyntasticWarning SpellCap
 colorscheme jellybeans
 
 set cursorline     " highlight current line
-set colorcolumn=80 " highlight column
+set colorcolumn=120 " highlight column
 highlight! ColorColumn ctermbg=233 guibg=#131313
 
 " Various columns
