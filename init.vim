@@ -2,7 +2,6 @@ call plug#begin('~/.config/nvim/plugged')
 
 " Make sure you use single quotes
 Plug 'valloric/YouCompleteMe'
-let g:ycm_auto_trigger = 0
  " Plug 'alvan/vim-closetag'
 Plug 'scrooloose/syntastic'
 Plug 'flazz/vim-colorschemes'
@@ -11,8 +10,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
-let g:gitgutter_grep=''
-set updatetime=100
 Plug 'tpope/vim-fugitive'
 " Plug 'tpope/vim-rails'
 " Plug 'tpope/vim-rake'
@@ -51,18 +48,31 @@ Plug 'davidhalter/jedi-vim'
 Plug 'mhinz/vim-startify'
 
 " Angular
-" Typescrript syntax support
-Plug 'https://github.com/leafgarland/typescript-vim'
 " Template strings syntax support
 " FIXME: throws E488 trailing characters error when opening .ts files
 Plug 'https://github.com/Quramy/vim-js-pretty-template'
 " TS features plugin
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+Plug 'ianks/vim-tsx'
 Plug 'Shougo/denite.nvim'
 " Angular CLI plugin
 " Use :Ng command in Vim
 Plug 'https://github.com/bdauria/angular-cli.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+" {{{
+  let g:fzf_nvim_statusline = 0 " disable statusline overwriting
+" }}}
+"
+" Typescrript syntax support
+" Plug 'https://github.com/leafgarland/typescript-vim'
+
+call plug#end()
+
+let g:ycm_auto_trigger = 0
+let g:gitgutter_grep=''
+set updatetime=100
+
 
 " emmet-vim plug
 let g:user_emmet_leader_key='<Tab>'
@@ -74,13 +84,6 @@ function! Completefunc(findstart, base)
     return "\<c-x>\<c-p>"
 endfunction
 
-
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-" {{{
-  let g:fzf_nvim_statusline = 0 " disable statusline overwriting
-" }}}
-"
-call plug#end()
 
 " Size of nerdtree width
 let g:NERDTreeWinSize=40
