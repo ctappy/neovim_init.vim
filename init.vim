@@ -269,6 +269,7 @@ let g:deoplete#max_menu_width = 0
 " let g:deoplete#omni#input_patterns = get(g:,'deoplete#omni#input_patterns',{})
 call deoplete#custom#var('omni', 'input_patterns', {})
 call deoplete#custom#option({'smart_case': v:false, 'refresh_always': v:false })
+call deoplete#custom#option('num_processes', 4)
 let g:tern_request_timeout = 1
 let g:tern_request_timeout = 6000
 let g:tern#command = ["tern"]
