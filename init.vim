@@ -1,5 +1,8 @@
 call plug#begin('~/.config/nvim/plugged')
 
+" Plug 'cespare/vim-toml:main'
+Plug 'dense-analysis/ale'
+
 " Make sure you use single quotes
 Plug 'valloric/YouCompleteMe'
  " Plug 'alvan/vim-closetag'
@@ -9,7 +12,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " status bar
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'airblade/vim-gitgutter'
+" Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 " Plug 'tpope/vim-rails'
 " Plug 'tpope/vim-rake'
@@ -69,8 +72,22 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 call plug#end()
 
+set omnifunc=ale#completion#OmniFunc
+let g:ale_completion_enabled = 1
+let g:ale_completion_autoimport = 1
+let g:ale_sign_column_always = 1
+let g:ale_fix_on_save = 1
+let g:ale_sign_error = "✗"
+let g:ale_sign_warning = "!"
+let g:ale_fixers = {
+    \ '*': ['remove_trailing_lines', 'trim_whitespace'],
+    \ 'rust': ['rustfmt'],
+\}
+inoremap <silent><expr><TAB>
+    \ pumvisible() ? "\<C-n>" : "\<TAB>"
+
 let g:ycm_auto_trigger = 0
-let g:gitgutter_grep=''
+" let g:gitgutter_grep=''
 set updatetime=100
 
 
