@@ -3,6 +3,8 @@ call plug#begin('~/.config/nvim/plugged')
 " Plug 'cespare/vim-toml:main'
 Plug 'dense-analysis/ale'
 
+Plug 'mrcjkb/rustaceanvim'
+
 " Make sure you use single quotes
 Plug 'valloric/YouCompleteMe'
  " Plug 'alvan/vim-closetag'
